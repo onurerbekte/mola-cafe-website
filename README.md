@@ -83,3 +83,7 @@ No installation, internet access, or API key is required. For optional HTTP prev
 
 ### Limitations and customization
 Language resets to Turkish on reload. No form, database, or backend is included. Basic accessibility practices are included; no formal WCAG certification is claimed. Update HTML text and its English dictionary entry together. Edit prices and hours in HTML. Use `git log --oneline` for history and `git status` for changes.
+
+Kurgusal demo proje / Fictional demo project.
+
+Pages: see PAGES.md / Pages yönergeleri: PAGES.md.

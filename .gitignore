@@ -2,3 +2,11 @@
 Thumbs.db
 node_modules/
 *.log
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials*.json
+token*.json

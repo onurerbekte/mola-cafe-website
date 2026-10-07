@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mola: örnek bir mahalle kahvecisi için iki dilli, mobil uyumlu demo web sitesi.">
+  <title>Mola — Mahalle kahvecisi / Neighborhood café</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">İçeriğe geç</a>
+  <div class="demo" data-i18n="demo">Portföy demosu • Mola kurgusal bir işletmedir. Sipariş ve rezervasyon alınmaz.</div>
+  <header>
+    <a class="brand" href="#" aria-label="Mola">mola<span>●</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" data-i18n="navToggle">Menü</button>
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#menu" data-i18n="menu">Menü</a>
+      <a href="#story" data-i18n="story">Hikâyemiz</a>
+      <a href="#visit" data-i18n="visit">Ziyaret</a>
+    </nav>
+    <button class="language" type="button" aria-label="Switch to English">EN</button>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div>
+        <p class="eyebrow" data-i18n="eyebrow">MAHALLEDE BİR NEFES</p>
+        <h1 data-i18n="headline">Günün güzel bir molası.</h1>
+        <p class="intro" data-i18n="intro">Bir fincan kahve, fırından bir şeyler ve acele etmeden geçireceğin bir an. Mola’ya hoş geldin.</p>
+        <a class="button" href="#menu" data-i18n="explore">Menüyü keşfet <span aria-hidden="true">↗</span></a>
+        <p class="small" data-i18n="heroNote">Kahve · Taze atıştırmalıklar · Sakin bir köşe</p>
+      </div>
+      <div class="coffee-art" role="img" aria-label="Krem renkli fincanda kahve illüstrasyonu" data-art>
+        <div class="circle"></div><div class="saucer"></div><div class="handle"></div><div class="cup"><div class="foam">✦</div></div>
+        <span class="art-label" data-i18n="artLabel">Biraz yavaşla.</span>
+      </div>
+    </section>
+    <section id="menu" class="section">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="menuEyebrow">FİNCANDAN TABAĞA</p><h2 data-i18n="menuTitle">Bugün canın ne ister?</h2></div><p data-i18n="pricesNote">Örnek menü ve fiyatlar • TL</p></div>
+      <div class="filters" role="group" aria-label="Menu filters">
+        <button type="button" data-filter="all" aria-pressed="true" data-i18n="all">Hepsi</button>
+        <button type="button" data-filter="coffee" aria-pressed="false" data-i18n="coffee">Kahve</button>
+        <button type="button" data-filter="food" aria-pressed="false" data-i18n="food">Atıştırmalık</button>
+      </div>
+      <p id="filter-status" class="sr-only" role="status"></p>
+      <div class="menu-grid">
+        <article data-category="coffee"><span class="item-number">01 /</span><h3>Espresso</h3><p data-i18n="espresso">Kısa, yoğun, sade bir başlangıç.</p><strong>90 TL</strong></article>
+        <article data-category="coffee"><span class="item-number">02 /</span><h3>Latte</h3><p data-i18n="latte">Espresso ve ipeksi süt köpüğü.</p><strong>130 TL</strong></article>
+        <article data-category="coffee"><span class="item-number">03 /</span><h3 data-i18n="filterCoffee">Filtre kahve</h3><p data-i18n="filterDesc">Uzun sohbetlere eşlik eden fincan.</p><strong>110 TL</strong></article>
+        <article data-category="food"><span class="item-number">04 /</span><h3 data-i18n="croissant">Kruvasan</h3><p data-i18n="croissantDesc">Kat kat, tereyağlı bir mola.</p><strong>120 TL</strong></article>
+        <article data-category="food"><span class="item-number">05 /</span><h3 data-i18n="cookie">Çikolatalı kurabiye</h3><p data-i18n="cookieDesc">Kahvenin yanına küçük bir mutluluk.</p><strong>75 TL</strong></article>
+        <article data-category="food"><span class="item-number">06 /</span><h3 data-i18n="sandwich">Peynirli sandviç</h3><p data-i18n="sandwichDesc">Öğle molası için pratik bir seçenek.</p><strong>160 TL</strong></article>
+      </div>
+    </section>
+    <section id="story" class="story section">
+      <p class="eyebrow" data-i18n="storyEyebrow">KÜÇÜK BİR YER, BASİT BİR FİKİR</p>
+      <h2 data-i18n="storyTitle">İyi kahve.<br>Rahat bir masa.<br>Kendine ayırdığın zaman.</h2>
+      <div><p data-i18n="storyBody">Mola, mahalle kahvecisi fikrinden yola çıkan örnek bir markadır. Bu tasarım, küçük bir işletmenin menüsünü, hikâyesini ve ziyaret bilgilerini tek sayfada sunar.</p><p data-i18n="storyNote">Buradaki ürünler, fiyatlar ve çalışma saatleri tasarımı göstermek için hazırlanmıştır; gerçek bir işletmeye ait değildir.</p></div>
+    </section>
+    <section id="visit" class="section visit">
+      <div><p class="eyebrow" data-i18n="visitEyebrow">BİR SONRAKİ MOLA</p><h2 data-i18n="visitTitle">Bize uğra.</h2><p data-i18n="visitBody">Gerçek bir işletmede bu alana adres, harita bağlantısı ve iletişim bilgileri eklenebilir.</p></div>
+      <div class="hours"><h3 data-i18n="hours">Örnek çalışma saatleri</h3><p><span data-i18n="weekdays">Pazartesi – Cuma</span><strong>08:00 – 19:00</strong></p><p><span data-i18n="weekend">Cumartesi – Pazar</span><strong>09:00 – 18:00</strong></p><p class="small" data-i18n="contactNote">Demo iletişim: Gerçek adres veya telefon eklenmemiştir.</p></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#">mola<span>●</span></a><p data-i18n="footer">Onur Erbekte tarafından geliştirilen portföy projesi.</p><a href="https://github.com/onurerbekte">GitHub ↗</a></footer>
+</body>
+</html>
